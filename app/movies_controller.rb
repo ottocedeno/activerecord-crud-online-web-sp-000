@@ -77,7 +77,7 @@ end
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
-  __
+  Movie.find_by(title: "Wat?").tap {|movie| movie.update(title: "Wat, huh?")}
   __
 end
 
