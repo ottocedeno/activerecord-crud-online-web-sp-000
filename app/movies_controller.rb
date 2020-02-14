@@ -72,8 +72,6 @@ def can_be_found_updated_and_saved
     movie.title = "Even Awesomer Flick"
     movie.save
   end
-  __
-  __
 end
 
 def can_update_using_update_method
