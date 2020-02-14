@@ -70,6 +70,7 @@ def can_be_found_updated_and_saved
   Movie.create(title: "Awesome Flick")
   Movie.find_by(title: "Awesome Flick").tap do |movie|
     movie.title = "Even Awesomer Flick"
+    movie.save
   end
   __
   __
